@@ -8,7 +8,8 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class ExampleClient extends Thread{
-	
+
+	// comment for test
 	private Socket server;
 	private PrintWriter bankServerOut;	
 	private BufferedReader userInput;
