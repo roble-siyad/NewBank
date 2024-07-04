@@ -136,5 +136,15 @@ Code reviews are essential for maintaining code quality and knowledge sharing:
 - Look for potential bugs, readability issues, and adherence to coding standards.
 - Approve the PR if it meets all requirements or request changes with specific feedback.
 
+### How to leave a Code Review
+When a fellow developer assigns you to a code review, you will receive a notification. Follow it to the PR and from here you can click the add a review.
+
+1. Read over the code submitted, have a look at files and make sure everything is as it should be.
+2. If you notice any mistakes, you can add a comment using the `+` symbol. Make sure the comment is clear and establishes were there can be improvement.
+3. Once you are confident in your review, you can either select approve review in the top right, or ask for changes with your comments submitted.
+4. The developer who owns the PR should make the changes if they feel they are relevant and commit the changes.
+5. From here they can request a re-review from developers who left comments.
+6. Once all changes have been addressed, you can select `squash and merge`.
+
 ## Conclusion
 Following these guidelines helps ensure a smooth and productive development process. Thank you for contributing to NewBank and helping us build a better banking solution!
