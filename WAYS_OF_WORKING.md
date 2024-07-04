@@ -27,7 +27,7 @@ We use a feature branch workflow to manage development:
 - **dev**: This is the development branch which development branches will branch from. We merge code here which has been code reviewed by peers.
 - **feature branches**: Create a new branch from the dev branch, for each feature or bugfix. Name the branch descriptively, e.g., `feature/user-authentication` or `bugfix/transaction-error`.
 
-### Creating a Feature Branch
+### Creating a Feature or Bug Branch
 First make sure you have the latest code from the main branch. You can do this using git pull:
 ```bash
 git checkout main
@@ -40,7 +40,7 @@ git checkout dev
 git pull
 ```
 
-From here you can create the feature branch:
+From here you can create the feature (or bug, just replace 'feature' with 'bug')  branch:
 ```bash
 git branch feature/your-feature-name
 ```
