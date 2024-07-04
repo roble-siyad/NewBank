@@ -102,9 +102,32 @@ Even if you are making a small change, you should create a pull request (PR) to 
     git push origin feature/your-feature-name
     ```
 3. Go to the repository on GitHub and click "Compare & pull request".
-4. Provide a clear title and description for the PR.
-5. Reference any related issues by linking the issue from Trello or GitHub.
-6. Request reviews from relevant team members.
+4. On the right, you should see a panel, within which you can assign yourself to the PR.
+5. You can also add a suitable tag to the PR - is the PR you are working on for an enhancement (a new feature), a bug (code is not working) and so on.
+6. Provide a clear title for the PR - This can be based of the ticket for the PR from Trello!
+7. The description for the PR must be in this format for every PR.
+
+    - Line 1: Link to the ticket from Trello - You can find the link by clicking on the ticket and copying from the URL.
+    - Add a space between the next line.
+    - Line 3: Add a couple sentences describing why this PR is being raised.
+    - Add a space between the next line.
+    - Line 5: A sentence on what this PR is tackling.
+
+    Format for PR description:
+    ```
+    https://trello.com/example-ticket-link
+
+    When a new repository is created, it is a good idea to get contributing developers up to speed with the teams ways of working!
+
+    This PR is focused on adding the WAYS_OF_WORKING.md to the repository to outline coding conventions.
+    ```
+
+8. DO NOT CLICK CREATE PR - instead click the drop down arrow and select `Draft a PR`, this can be converted to a formal PR later :wink:
+9. From here on you can work on your code and any committed changes will appear in the PR.
+10. When you confident you have address everything regarding the ticket in your code, you can convert the PR by clicking `Ready for review`.
+11. Remember to select some reviewers to look over the changes you have made - They will have a fresh pair of eyes and will comment if they see any errors :neckbeard:
+12. Once all comments from reviewers have been addressed - DO NOT CLICK MERGE PULL REQUEST!!! - Instead click `Squash and Merge`, this squashes the several commits you may have made into a single commit (Uses the PR title - so will follow the implemented feature or bug fix), which is way better for commit history.
+13. If it is successful, you should see your changes in the main branch - Well done! You have just merged your first bit of code :relieved:.
 
 ## Code Reviews
 Code reviews are essential for maintaining code quality and knowledge sharing:
