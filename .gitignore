@@ -1,3 +1,6 @@
 .gitignore
 
+# ignore class files
+*.class
+
 .DS_Store
