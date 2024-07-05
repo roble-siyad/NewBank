@@ -13,15 +13,15 @@ public class NewBank {
 	}
 	
 	private void addTestData() {
-		Customer bhagy = new Customer();
+		Customer bhagy = new Customer("Bird@1");
 		bhagy.addAccount(new Account("Main", 1000.0));
 		customers.put("Bhagy", bhagy);
 		
-		Customer christina = new Customer();
+		Customer christina = new Customer("Cat@1");
 		christina.addAccount(new Account("Savings", 1500.0));
 		customers.put("Christina", christina);
 		
-		Customer john = new Customer();
+		Customer john = new Customer("Jellyfishg@1");
 		john.addAccount(new Account("Checking", 250.0));
 		customers.put("John", john);
 	}
@@ -30,12 +30,27 @@ public class NewBank {
 		return bank;
 	}
 	
-	public synchronized CustomerID checkLogInDetails(String userName, String password) {
-		if(customers.containsKey(userName)) {
+	/* public synchronized CustomerID checkLogInDetails(String userName, String password) {
+		Customer customer = customers.get(userName);
+		if (customer != null && customer.getPassword().equals(password)) {
 			return new CustomerID(userName);
 		}
 		return null;
+	} */ 
+
+	public synchronized CustomerID checkLogInDetails(String userName, String password) {
+		System.out.println("Checking login details for username: " + userName);
+		
+		Customer customer = customers.get(userName);
+		if (customer != null && customer.getPassword().equals(password)) {
+			System.out.println("Authentication successful for username: " + userName);
+			return new CustomerID(userName);
+		} else {
+			System.out.println("Authentication failed for username: " + userName);
+			return null;
+		}
 	}
+	
 
 	// commands from the NewBank customer are processed in this method
 	public synchronized String processRequest(CustomerID customer, String request) {
